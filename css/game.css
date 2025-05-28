@@ -59,9 +59,6 @@ body {
 
 #startButton{
   position: absolute;
-  top: 400px; /* Adjusted to align better with Game Over text */
-  left: 45%;
-  transform: translateX(-50%);
   font-size: 16px;
   cursor: pointer;
   z-index: 10;
