@@ -42,7 +42,7 @@ body {
 #restartButton {
   display: none;
   position: absolute;
-  top: 400px; /* Adjusted to align better with Game Over text */
+  top: 500px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 16px;
