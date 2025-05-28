@@ -4,7 +4,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-image: url("/Escape-with-Sprite/img/background_main.png");
+  background-image: url("/img/background_main.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -15,7 +15,7 @@ body {
 #gameCanvas {
   border: 2px solid transparent; /* Remove solid black border */
   border-image: linear-gradient(to right, hsl(0deg 100% 50%), hsl(348deg 100% 27%)) 1; /* Red #FF0000 to dark red #8B0000 */
-  background-image: url("/Escape-with-Sprite/img/background_game.png");
+  background-image: url("/img/background_game.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -44,6 +44,23 @@ body {
   position: absolute;
   top: 400px; /* Adjusted to align better with Game Over text */
   left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 10;
+  border: none;
+  background: transparent;
+  padding: 0;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+#startButton{
+  position: absolute;
+  top: 400px; /* Adjusted to align better with Game Over text */
+  left: 45%;
   transform: translateX(-50%);
   font-size: 16px;
   cursor: pointer;
@@ -99,34 +116,37 @@ body {
   transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
 }
 
-#restartButton:hover {
+#startButton, #restartButton:hover {
   filter: brightness(120%); /* Brighter for hover, more vibrant */
 }
 
-#restartButton:hover .front {
+#startButton, #restartButton:hover .front {
   transform: translateY(-6px);
   transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
 }
 
-#restartButton:active .front {
+#startButton, #restartButton:active .front {
   transform: translateY(-2px);
   transition: transform 34ms;
 }
 
-#restartButton:hover .shadow {
+#startButton, #restartButton:hover .shadow {
   transform: translateY(4px);
   transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
 }
 
-#restartButton:active .shadow {
+#startButton, #restartButton:active .shadow {
   transform: translateY(1px);
   transition: transform 34ms;
 }
 
-#restartButton:focus:not(:focus-visible) {
+#startButton, #restartButton:focus:not(:focus-visible) {
   outline: none;
 }
 
+#startButton{
+  z-index: 100000;
+}
 
 
 
