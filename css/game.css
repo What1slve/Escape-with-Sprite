@@ -4,7 +4,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-image: url("/Escape-with-Sprite/img/background_main.png");
+  background-image: url("/img/background_main.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -15,7 +15,7 @@ body {
 #gameCanvas {
   border: 2px solid transparent; /* Remove solid black border */
   border-image: linear-gradient(to right, hsl(0deg 100% 50%), hsl(348deg 100% 27%)) 1; /* Red #FF0000 to dark red #8B0000 */
-  background-image: url("/Escape-with-Sprite/img/background_game.png");
+  background-image: url("/img/background_game.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
